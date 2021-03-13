@@ -86,6 +86,7 @@ Ext.extend(Ext.ux.KodiImages, Ext.Container, {
             this.el.dom.src = Ext.BLANK_IMAGE_URL;
         }
         else {
+            imagePath = decodeURIComponent(imagePath)
             this.el.dom.src = imagePath;
         }
     }

@@ -79,8 +79,8 @@ WIMM.util.convertArtworkURL = function(value) {
         return '';
     }
     else {
-        // subtract image:// from the start and / from the end.
-        return '/image/' + value.substr(8, value.length - 9);
+        //return '/image/' + value.substr(8, value.length - 9);
+		return value.substr(8, value.length - 9);
     }
 };
 

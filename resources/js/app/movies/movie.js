@@ -260,6 +260,10 @@ var movieDetailsPanel = new Ext.FormPanel({
                     height: 95
                 },
                 {
+                    name: 'file',
+                    fieldLabel: 'Path'
+                },
+				{
                     xtype: 'textarea',
                     height: 34,
                     name: 'plotoutline',

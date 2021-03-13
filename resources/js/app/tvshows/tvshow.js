@@ -324,6 +324,10 @@ var episodeDetailsPanel = new Ext.FormPanel({
                     fieldLabel: 'Rating',
                     name: 'rating'
                 },
+				{
+					fieldLabel: 'Directory',
+					name: 'directory'
+                },
                 {
                     xtype: 'textarea',
                     fieldLabel: 'Description',
