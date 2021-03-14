@@ -236,7 +236,7 @@ function checkSet(value) {
 }
 
 function checkRating(rating) {
-    return rating !== '' ?
+    return rating !== '0' ?
         WIMM.util.convertRating(rating) :
         '';
 }

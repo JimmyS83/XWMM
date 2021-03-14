@@ -221,7 +221,7 @@ function checkWatched(playCount) {
 }
 
 function checkRating(rating) {
-    return rating !== '' ?
-        10.2 :
+    return rating !== '0.0' ?
+        rating :
         '';
 }
