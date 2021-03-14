@@ -82,7 +82,7 @@ Ext.extend(Ext.ux.KodiImages, Ext.Container, {
     },
     // set source image
     updateSrc: function(imagePath) {
-        if (imagePath === undefined) {
+        if (imagePath === undefined || imagePath === '') {
             this.el.dom.src = Ext.BLANK_IMAGE_URL;
         }
         else {

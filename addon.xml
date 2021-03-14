@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="webinterface.WIMM"
-  version="4.1.24"
+  version="4.1.25"
   name="WIMM"
   provider-name="slash | Zernable | MokuJinJin | nwtn | fyfe | criticalfiction">
   <requires>
@@ -17,6 +17,6 @@
     <platform>all</platform>
     <license>GPLv2</license>
     <forum>http://forum.kodi.tv/showthread.php?tid=188839</forum>
-    <source>https://github.com/JimmyS83/XWMM</source>
+    <source>https://github.com/slash2009/XWMM</source>
   </extension>
 </addon>

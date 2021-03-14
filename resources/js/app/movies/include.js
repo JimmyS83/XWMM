@@ -235,8 +235,15 @@ function checkSet(value) {
         '';
 }
 
+function checkRating(rating) {
+    return rating !== '' ?
+        WIMM.util.convertRating(rating) :
+        '';
+}
+
 var movieColumnModel = new Ext.grid.ColumnModel([
     { header: 'Title', dataIndex: 'Movietitle', id: 'title' },
-    { header: '<img src="../resources/images/icons/set.png" width="16" height="16" alt="In Set">', dataIndex: 'set', width: 30, renderer: checkSet, tooltip: 'In Set' },
+    /* { header: '<img src="../resources/images/icons/set.png" width="16" height="16" alt="In Set">', dataIndex: 'set', width: 30, renderer: checkSet, tooltip: 'In Set' },*/
+	{ header: '<img src="../resources/images/icons/rating.png" width="16" height="16" alt="Rating">', dataIndex: 'rating', width: 35, renderer: checkRating, tooltip: 'Rating' },
     { header: '<img src="../resources/images/icons/checked.png" width="16" height="16" alt="Watched">', dataIndex: 'watched', width: 26, renderer: checkWatched, tooltip: 'Watched' }
 ]);

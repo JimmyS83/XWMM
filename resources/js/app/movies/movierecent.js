@@ -25,6 +25,7 @@ var MovieRecord = Ext.data.Record.create([
     { name: 'Movietitle', mapping: 'title' },
     { name: 'watched', mapping: 'playcount' },
     { name: 'set' },
+	{ name: 'rating' },
     { name: 'year' }
 ]);
 
@@ -37,7 +38,7 @@ var storeMovie = new Ext.data.Store({
             method: 'VideoLibrary.GetMovies',
             params: {
                 properties: [
-                    'title', 'year', 'playcount', 'set'
+                    'title', 'year', 'playcount', 'set', 'rating'
                 ],
                 sort: {
                     order: 'descending',

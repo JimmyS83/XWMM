@@ -372,6 +372,7 @@ var tvShowGrid = new Ext.grid.GridPanel({
 
     cm: new Ext.grid.ColumnModel([
         { header: 'Title', dataIndex: 'title', id: 'title' },
+		{ header: '<img src="../resources/images/icons/rating.png" width="16" height="16" alt="Rating">', dataIndex: 'rating', width: 35, renderer: checkRating, tooltip: 'Rating' },
         { header: '<img src="../resources/images/icons/checked.png" width="16" height="16" alt="Watched">',
           dataIndex: 'playcount', width: 30, tooltip: 'Watched', renderer: checkWatched }
     ]),

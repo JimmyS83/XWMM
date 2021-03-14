@@ -219,3 +219,9 @@ function checkWatched(playCount) {
         '<img src="../resources/images/icons/checked.png" width="16" height="16" alt="Watched">' :
         '';
 }
+
+function checkRating(rating) {
+    return rating !== '' ?
+        10.2 :
+        '';
+}
