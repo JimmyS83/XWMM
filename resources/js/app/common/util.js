@@ -104,7 +104,16 @@ WIMM.util.convertVFSURL = function(value) {
  * @return {string} The converted rating.
  */
 WIMM.util.convertRating = function(value) {
-    return value.toFixed(1);
+	var desetiny
+	if(Math.floor(value) === value) desetiny = 0;
+	else desetiny = value.toString().split(".")[1].length || 0;
+	
+    if (desetiny != 1) {
+		return value.toFixed(1);
+	}
+	else {
+		return value
+	}
 };
 
 /**

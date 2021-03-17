@@ -66,6 +66,7 @@ var episodeRecord = Ext.data.Record.create([
     { name: 'streamdetails' },
     { name: 'playcount' },
     { name: 'episodeid' },
+    { name: 'path', mapping: 'file' },
     { name: 'file', convert: WIMM.util.convertPathToFileName },
     { name: 'directory', mapping: 'file', convert: WIMM.util.convertPathToDirectory }
 ]);
@@ -325,8 +326,8 @@ var episodeDetailsPanel = new Ext.FormPanel({
                     name: 'rating'
                 },
 				{
-					fieldLabel: 'Directory',
-					name: 'directory'
+					fieldLabel: 'Path',
+					name: 'path'
                 },
                 {
                     xtype: 'textarea',
