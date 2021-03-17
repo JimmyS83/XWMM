@@ -200,10 +200,14 @@ var movieDetailsPanel = new Ext.FormPanel({
                     name: 'title',
                     allowBlank: false
                 },
-                {
+				{
+                    fieldLabel: 'Original Title',
+                    name: 'originaltitle',
+                },
+                /*{
                     fieldLabel: 'Sort Title',
                     name: 'sorttitle',
-                },
+                },*/
                 {
                     fieldLabel: 'Genres',
                     name: 'genre',
@@ -263,18 +267,18 @@ var movieDetailsPanel = new Ext.FormPanel({
                     name: 'file',
                     fieldLabel: 'Path'
                 },
-				{
+				/*{
                     xtype: 'textarea',
                     height: 34,
                     name: 'plotoutline',
                     fieldLabel: 'Outline'
-                },
-                {
+                },*/
+                /*{
                     xtype: 'textarea',
                     name: 'tagline',
                     fieldLabel: 'Tagline',
                     height: 34
-                },
+                },*/
                 {
                     fieldLabel: 'Director',
                     name: 'director'

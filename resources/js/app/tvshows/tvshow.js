@@ -84,7 +84,7 @@ var storeTVShow = new Ext.data.Store({
             method: 'VideoLibrary.GetTVShows',
             params: {
                 properties: [
-                    'title', 'sorttitle', 'genre', 'year', 'rating', 'plot', 'studio', 'mpaa', 'playcount',
+                    'title', 'sorttitle', 'originaltitle',  'genre', 'year', 'rating', 'plot', 'studio', 'mpaa', 'playcount',
                     'episode', 'imdbnumber', 'premiered', 'votes', 'lastplayed', 'art', 'file',
                     'watchedepisodes', 'tag'
                 ],
@@ -231,10 +231,14 @@ var tvShowDetailsPanel = new Ext.FormPanel({
                             name: 'title',
                             allowBlank: false
                         },
-                        {
+						{
+							fieldLabel: 'Original Title',
+							name: 'originaltitle',
+						},
+                        /*{
                             fieldLabel: 'Sort Title',
                             name: 'sorttitle'
-                        },
+                        },*/
                         {
                             fieldLabel: 'Genres',
                             name: 'genre',
