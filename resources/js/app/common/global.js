@@ -22,7 +22,7 @@
  * along with WIMM.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-var myVersion = '4.1.28';
+var myVersion = '4.1.29';
 
 /**
  * Protect window.console method calls, e.g. console is not defined on IE
@@ -72,10 +72,20 @@ var menuBar = new Ext.Toolbar({
                     iconCls: 'silk-grid',
                     handler: function() { window.location = 'movies-by-genre.html'; }
                 },
+				{
+                    text: 'by Genre (Original Title)',
+                    iconCls: 'silk-grid',
+                    handler: function() { window.location = 'movies-by-genre-original.html'; }
+                },
                 {
                     text: 'by Date Added',
                     iconCls: 'silk-grid',
                     handler: function() { window.location = 'movies-by-date-added.html'; }
+                },
+				{
+                    text: 'by Date Added (Original Title)',
+                    iconCls: 'silk-grid',
+                    handler: function() { window.location = 'movies-by-date-added-original.html'; }
                 }
             ]
         },
