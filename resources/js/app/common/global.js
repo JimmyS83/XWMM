@@ -57,36 +57,37 @@ var menuBar = new Ext.Toolbar({
             text: 'Movies',
             width: 60,
             menu: [
-                {
-                    text: 'by Title',
-                    iconCls: 'silk-grid',
-                    handler: function() { window.location = 'movies.html'; }
-                },
 				{
                     text: 'by Original Title',
                     iconCls: 'silk-grid',
                     handler: function() { window.location = 'movies-by-originaltitle.html'; }
-                },
-                {
-                    text: 'by Genre',
-                    iconCls: 'silk-grid',
-                    handler: function() { window.location = 'movies-by-genre.html'; }
                 },
 				{
                     text: 'by Genre (Original Title)',
                     iconCls: 'silk-grid',
                     handler: function() { window.location = 'movies-by-genre-original.html'; }
                 },
-                {
-                    text: 'by Date Added',
-                    iconCls: 'silk-grid',
-                    handler: function() { window.location = 'movies-by-date-added.html'; }
-                },
 				{
                     text: 'by Date Added (Original Title)',
                     iconCls: 'silk-grid',
                     handler: function() { window.location = 'movies-by-date-added-original.html'; }
+                },
+				{
+                    text: 'by Title',
+                    iconCls: 'silk-grid',
+                    handler: function() { window.location = 'movies.html'; }
+                },
+                {
+                    text: 'by Genre',
+                    iconCls: 'silk-grid',
+                    handler: function() { window.location = 'movies-by-genre.html'; }
+                },
+                {
+                    text: 'by Date Added',
+                    iconCls: 'silk-grid',
+                    handler: function() { window.location = 'movies-by-date-added.html'; }
                 }
+				
             ]
         },
         {
