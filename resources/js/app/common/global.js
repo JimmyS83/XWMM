@@ -54,36 +54,36 @@ var menuBar = new Ext.Toolbar({
     items: [
         {
             xtype: 'tbbutton',
-            text: 'Movies',
+            text: 'Filmy',
             width: 60,
             menu: [
 				{
-                    text: 'by Original Title',
+                    text: 'podle originálního názvu',
                     iconCls: 'silk-grid',
                     handler: function() { window.location = 'movies-by-originaltitle.html'; }
                 },
 				{
-                    text: 'by Genre (Original Title)',
+                    text: 'podle žánru (originální název)',
                     iconCls: 'silk-grid',
                     handler: function() { window.location = 'movies-by-genre-original.html'; }
                 },
 				{
-                    text: 'by Date Added (Original Title)',
+                    text: 'podle data přidání (originální název)',
                     iconCls: 'silk-grid',
                     handler: function() { window.location = 'movies-by-date-added-original.html'; }
                 },
 				{
-                    text: 'by Title',
+                    text: 'podle názvu',
                     iconCls: 'silk-grid',
                     handler: function() { window.location = 'movies.html'; }
                 },
                 {
-                    text: 'by Genre',
+                    text: 'podle žánru',
                     iconCls: 'silk-grid',
                     handler: function() { window.location = 'movies-by-genre.html'; }
                 },
                 {
-                    text: 'by Date Added',
+                    text: 'podle data přidání',
                     iconCls: 'silk-grid',
                     handler: function() { window.location = 'movies-by-date-added.html'; }
                 }
@@ -92,27 +92,27 @@ var menuBar = new Ext.Toolbar({
         },
         {
             xtype: 'tbbutton',
-            text: 'TV Shows',
+            text: 'Seriály',
             width: 60,
             handler: function() { window.location = 'tv-shows.html'; }
         },
         {
             xtype: 'tbbutton',
-            text: 'Music',
+            text: 'Hudba',
             width: 60,
             menu: [
                 {
-                    text: 'Artist / Album',
+                    text: 'Umělec / Album',
                     iconCls: 'silk-grid',
                     handler: function() { window.location = 'music-by-artist.html'; }
                 },
                 {
-                    text: 'Genre / Album',
+                    text: 'Žánr / Album',
                     iconCls: 'silk-grid',
                     handler: function() { window.location = 'music-by-genre.html'; }
                 },
                 {
-                    text: 'Year / Album',
+                    text: 'Rok / Album',
                     iconCls: 'silk-grid',
                     handler: function() { window.location = 'music-by-year.html'; }
                 }
